@@ -12,11 +12,11 @@ body{
     flex-direction: column;
 }
 
-header{
+body>header /*ou classe cabecalho_site */{
     min-height: 120px;
     width: 100%;
     padding: 0px 40px;
-    background-color: lightgreen;   
+    background-color: #185483;   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,30 +53,73 @@ nav ul li a:hover{
 main{
     flex-grow: 1;
     display: flex;
+    flex-wrap: wrap;
 
 }
 
 section{
     /* border: 2px solid red; */
-    flex-grow: 1;
+    flex: 1 1 300px;
 }
 
 section h2{
     text-align: center;
 }
 
-.fem{
-    background-color: lightgoldenrodyellow;
+.masc{
+    padding:20px;
 }
 
-footer{
-    background-color: #232;
+.masc h2{
+    margin-bottom: 15px;
+}
+
+.masc p{
+    margin: 10px 0px;
+}
+
+.masc img{
+    max-width: 100%;
+}
+
+.fem{
+    background-color: lightblue;
+    padding: 20px;
+}
+
+.fem p{
+    padding: 10px 0px;
+}
+
+article{
+    background-color: white;
+    padding: 10px;
+}
+
+article>header>h1{
+    text-align: center;
+    padding: 10px;
+}
+
+article>p{
+    padding: 10px;
+    text-align: justify;
+}
+
+article>footer{
+    font-size: 12px;
+    text-align: center;
+    font-style: italic;
+}
+
+body>footer{
+    background-color:#001525;
     min-height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-footer p{
+body>footer p{
     color: #fff;
 }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+
+        table{
+            width: 70%;
+            margin: auto;
+        }
+
+        table, tr, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabelas</h1>
+
+    <table>
+        <tr> <!--table row - linha da tabela -->
+            <th>Nome</th> <!--table head - cabecalho da tabela -->
+            <th>Telefone</th>
+            <th>Endereço</th>
+            <th>Email</th>
+        </tr>
+
+        <thead>
+            <tbody>
+
+                <tr>
+                    <td rowspan="2">Luis Carlos</td> <!--table description - descricao da tabela -->
+                    <td>98754-2154</td>
+                    <td>Rua Tal, 15</td>
+                    <td>lsilva@fiap.com.br</td>
+                </tr>
+        
+                <tr>
+                    <!-- <td>Luis Henrique</td> table description - descricao da tabela -->
+                    <td>98654-2987</td>
+                    <td>Rua Outra, 98</td>
+                    <td>luish@gmail.com</td>
+                </tr>
+        
+                <tr>
+                    <td>José Francisco</td> <!--table description - descricao da tabela -->
+                    <td>98241-9873</td>
+                    <td>Rua Sei La, 98</td>
+                    <td>josefran23@gmail.com</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Lista de funcionários 2024</td>
+                </tr>
+            </tfoot>
+        </thead>
+    </table>
+
+</body>
+
+</html>
